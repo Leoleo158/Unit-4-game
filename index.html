@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crystal Collectors Game</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="/assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+<div class="intro">
+  <h1>Crystal Collector!</h1>
+      <p>You will be given a random number at the start of the game!</p>
+</div>
+<div class="container">
+  <h2>Guess what letter I'm thinking of!</h2>
+  <div class="row">
+      <div class="col-md-3">
+          <ul id="numberSection" class="listGroup">
+              <li class="listItem" id="number">Match Number: </li>
+              <li class="numberBox text-center" id="randomNumber">120</li>
+          </ul>
+      </div>
+  </div>
+//colums for buttons
+    <div class="col-md-6 text-center" id="buttons">
+      <button id="button1" value="0"></button>
+      <button id="button2" value="0"></button>
+      <button id="button3" value="0"></button>
+      <button id="button4" value="0"></button>
+    </div>
+//total points column
+  <div class="col-md-3" id="points">
+      <h3 class="text-center" id="score"> Total Score: </h3>
+      <h2 class="text-center" id="totalNum">0</h2>
+  </div>
+
+//footer with divs
+
+<div class="row" id="score">
+  <div class="col-md-4"></div>
+
+  <div class="col-md-2" id="winSect">
+    <h3 class="text-center" id="wins"> Wins: </h3>
+  </div>
+
+  <div class="col-md-2" id="lossSect">
+    <h3 class="text-center" id="losses"> Losses: </h3>
+  </div>
+
+  <div class="col-md-4"></div>
+</div>
+
+</body>
+</html>
