@@ -12,8 +12,49 @@ html {
     font-weight: bold;
 }
 
+h1 {
+
+    background-color: aqua;
+    text-align: center;
+    height: 150px;
+    padding-top: 60px;
+    font-weight: bold;
+}
+
 h3 {
 
     background-color: aqua;
+    text-align: center;
+    font-weight: bold;
 }
 
+h2 {
+    font-weight: bold;
+}
+.matchNumber {
+    float: right;
+}
+img {
+    height: 150px;
+    width: 100px;
+    
+}
+
+button {
+    position: relative;
+}
+
+.footer {
+  margin-bottom: -200px;
+  background-color: whitesmoke;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 1rem;
+  position: absolute;
+  font-weight: bold;
+}

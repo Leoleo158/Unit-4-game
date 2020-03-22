@@ -2,7 +2,7 @@ $(document).ready(() => {
     
     
 //program generates a random number between 19 and 120
-    var randomNumber = Math.floor(Math.random() * 120 + 19);
+    var randomNumber = Math.floor(Math.random() * 101 + 19);
     $("#randomNumbers").text(randomNumber);
 
 //Each crystal should have a random hidden value between 1 - 12.
@@ -16,23 +16,25 @@ $(document).ready(() => {
     var losses = 0;
     var totScore = 0;
    
-    $("#totScore").text(totScore);
+    $("#totScore").text(total);
     $("#numWins").text(wins);
     $("#numLosses").text(losses);
 
 //reset function
 
 function reset () {
-    
+    var randomNumber = Math.floor(Math.random() * 101 + 19);
+    console.log(randomNumber);
+    $("#randomNumbers").text(randomNumber);
     var button1 = Math.floor(Math.random() * 12) + 1;
     var button2 = Math.floor(Math.random() * 12) + 1;
     var button3 = Math.floor(Math.random() * 12) + 1;
     var button4 = Math.floor(Math.random() * 12) + 1;
-    var randomNumber = Math.floor(Math.random() * 120 + 19);
-
-    total = 0;
     
+    total = 0;
     $("#totScore").text(total);
+    
+    
 }
 
 function winner () {

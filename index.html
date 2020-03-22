@@ -7,18 +7,36 @@
 </head>
 <body>
 
-<div class="intro">
+<div class="header">
   <h1>Crystal Collector!</h1>
-      <p>You will be given a random number at the start of the game!</p>
+  
 </div>
+<div class="instructions">
+  <h2>Here's how you play the game</h2>
+  </br>
+  <ol>
+    <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+    <li>There are four crystals below.</li>
+    <ul>
+      <li id="blue">Blue</li>
+      <li id="green">Green</li>
+      <li id="red">Red</li>
+      <li id="yellow">Yellow</li>
+    </ul>
+    <li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+    <li>You win the game by matching your total score to the random number.</li>
+    <li>You lose the game if your total score goes above the random number.</li>
+    <li>The value of each crystal is hidden from you until you click on it.</li>
+    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+  </ol>
+</div>
+
 <div class="container">
-  <h2>Guess what letter I'm thinking of!</h2>
   <div class="row">
-      <div class="col-md-3">
-          <ul id="numberSection" class="listGroup">
-              <li class="listItem" id="matchNumber">Match Number: </li>
-              <li class="numberBox text-center" id="randomNumbers"></li>
-          </ul>
+      <div class="col-md-3" id="numberSection" class="listGroup">
+              <h3 class="listItem" id="matchNumber">Match Number: </h3>
+              <h2 class="numberBox text-center" id="randomNumbers"></h2>
+          
       </div>
   </div>
 
@@ -27,36 +45,36 @@
       <button id="button2" value="0"> <img src="https://i.ya-webdesign.com/images/gems-vector-4.png" alt=""></button>
       <button id="button3" value="0"> <img src="https://thumbs.dreamstime.com/b/yellow-topaz-isolated-white-background-realistic-shining-jewel-colorful-gemstone-can-be-used-as-part-logo-icon-web-77680422.jpg" alt=""></button>
       <button id="button4" value="0"> <img src="https://i.ya-webdesign.com/images/jewel-clipart-colorful-thing-14.png" alt=""></button>
-    </div>
-
-  <div class="col-md-3">
-      <h3 class="text-center" id="score"> Total Score: </h3>
-      <h2 class="text-center" id="totScore"></h2>
   </div>
 
 
-<div class="row" id="totScore">
-  <div class="col-md-4"></div>
+&emsp;
+
+<div class="row" id="..">
+
+  <div class="col-md-3">
+    <h3 class="text-center" id="score"> Total Score </h3>
+    <h2 class="text-center" id="totScore"></h2>
+  </div>
 
   <div class="col-md-2" id="winSect">
-    <h3 class="text-center" id="Wins"> Wins: </h3>
+    <h3 class="text-center" id="Wins"> Wins </h3>
     <h2 class="text-center" id="numWins"></h2>
   </div>
 
   <div class="col-md-2" id="lossSect">
-    <h3 class="text-center" id="losses"> Losses: </h3>
+    <h3 class="text-center" id="losses"> Losses </h3>
     <h2 class="text-center" id="numLosses"></h2>
   </div>
 
-  <div class="col-md-4"></div>
 </div>
 
-<!-- <div class="gems">
-  <img src="https://clipartstation.com/wp-content/uploads/2018/09/diamond-clipart-png-2.jpg" class=gemImage id="one" alt="Blue Gem">
-  <img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
-  <img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
-  <img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
-</div> -->
+<div class="footer">
+  Copyright 2020 Leo Gervilla
+</div>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="assets/javascript/game.js"></script>
